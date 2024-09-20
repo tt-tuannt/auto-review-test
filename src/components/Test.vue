@@ -16,11 +16,16 @@ const incrementt = () => {
 const decr = () => {
   count_user.value--
 }
+
+const aaabbbbb = () => {
+  return count_user.value + count_user.value
+}
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
   <h1>{{ count_user }}</h1>
+  <h1>{{ aaabbbbb() }}</h1>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
