@@ -9,6 +9,13 @@ const count = ref(0)
 console.log(count);
 
 const count_user = ref(0)
+
+const incrementt = () => {
+  count_user.value++
+}
+const decr = () => {
+  count_user.value--
+}
 </script>
 
 <template>
@@ -17,6 +24,8 @@ const count_user = ref(0)
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
+    <button type="button" @click="incrementt">count is {{ count }}</button>
+    <button type="button" @click="decr">count is {{ count }}</button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
