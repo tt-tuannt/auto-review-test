@@ -1,0 +1,4 @@
+[pr_reviewer]
+extra_instructions="""\
+- without console.log
+"""
